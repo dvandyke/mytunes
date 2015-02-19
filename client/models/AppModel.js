@@ -28,7 +28,6 @@ var AppModel = Backbone.Model.extend({
       queue.remove(queue.first());
     }, this);
 
-
   }
 
 });

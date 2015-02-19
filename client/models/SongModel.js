@@ -8,5 +8,9 @@ var SongModel = Backbone.Model.extend({
 
   enqueue: function(song){
     this.trigger('enqueue', this);
+  },
+
+  dequeue: function(song){
+    this.trigger('dequeue', this);
   }
 });
