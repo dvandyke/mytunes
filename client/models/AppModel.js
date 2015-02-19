@@ -17,14 +17,15 @@ var AppModel = Backbone.Model.extend({
     }, this);
 
     params.library.on('enqueue', function(song){
-      // var queue = _.clone(this.get("songQueue"));
-      // queue.push(song);
-      // this.set('songQueue', queue);
-
       var queue = this.get('songQueue');
-      console.log(queue.length);
+      // console.log(queue.length);
       queue.add(song);
-      console.log(queue.length);
+      // console.log(queue.length);
+    }, this);
+
+    params.library.on('dequeue', function(song){
+      var queue = this.get('songQueue');
+      queue.remove(queue.first());
     }, this);
 
 
