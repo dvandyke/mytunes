@@ -20,4 +20,24 @@ var songData = [
     title: "If Your Girl Only Knew",
     artist: "Aaliyah",
   }
+  // {
+  //   url: "Are You That Somebody.mp3",
+  //   title: "Are You That Somebody?",
+  //   artist: "Aaliyah",
+  // },
+  // {
+  //   url: "Four Page Letter.mp3",
+  //   title: "Four Page Letter",
+  //   artist: "Aaliyah",
+  // },
+  // {
+  //   url: "Miss You.mp3",
+  //   title: "Miss You",
+  //   artist: "Aaliyah",
+  // },
+  // {
+  //   url: "Try Again.mp3",
+  //   title: "Try Again",
+  //   artist: "Aaliyah",
+  // }
 ];
