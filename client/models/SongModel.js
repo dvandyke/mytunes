@@ -16,5 +16,7 @@ var SongModel = Backbone.Model.extend({
 
   removeSong: function(){
     this.trigger('removeSong', this);
-  }
+  },
+
+  playCount: 0
 });

@@ -1,5 +1,109 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>MyTunes</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+<style>
+  body {
+    background: url('aaliyah.jpeg') top no-repeat rgb(190, 187, 204);
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    background-size: cover;
+    color: #fff;
+  }
+
+  audio {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #141414;
+    display: block;
+    margin: 0;
+  }
+
+  table {
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  th {
+    font-weight: 100;
+    font-size: 2em;
+    padding: 0.5em 0.5em 0.2em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  td {
+    cursor: pointer;
+    padding: 0.5em 1em;
+    text-align: left;
+  }
+
+  tr:hover td {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  tr:hover td:first-child,
+  tr:nth-of-type(odd) td:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+
+  tr:hover td:last-child,
+  tr:nth-of-type(odd) td:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+
+  tr:nth-of-type(odd) {
+    background: rgba(180, 177, 193, 0.5);
+  }
+
+  .library, .queue {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    width: 50%;
+    height: 45%;
+    padding: 1em;
+    box-sizing: border-box;
+    background: #ffffff; /* Old browsers */
+    background: rgba(255, 255, 255, 0.5);
+    background: -moz-linear-gradient(top, rgba(190, 187, 204, 0.5) 0%, #191919 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#191919)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(190, 187, 204, 0.5) 0%,#191919 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(190, 187, 204, 0.5) 0%,#191919 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(190, 187, 204, 0.5) 0%,#191919 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(190, 187, 204, 0.5) 0%,#191919 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(190, 187, 204, 0.5)', endColorstr='#191919',GradientType=0 ); /* IE6-9 */
+
+  }
+
+  .library {
+    left: 0;
+  }
+
+  .queue {
+    right: 0;
+  }
+
+  .col-narrow {
+    width: 15%;
+  }
+
+  .col-wide {
+    width: 70%;
+  }
+
+  .col-narrow-2 {
+    width: 25%;
+  }
+
+</style>
+  </head>
   <body>
     <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
      below them until after the scripts load-->

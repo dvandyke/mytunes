@@ -17,6 +17,7 @@ var AppView = Backbone.View.extend({
       }
 
       this.songQueueView.render();
+      this.libraryView.render();
     }, this);
 
     appModel.get('songQueue').bind('remove', function(song){

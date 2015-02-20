@@ -10,6 +10,9 @@ var PlayerView = Backbone.View.extend({
 
   setSong: function(song){
     this.model = song;
+    if(this.model){
+      this.model.playCount++;
+    }
     this.render();
   },
 
